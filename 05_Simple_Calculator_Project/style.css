@@ -1,0 +1,67 @@
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contanier {
+    background-color: rgb(75, 77, 76);
+    padding: 20px 40px;
+    border: 10px solid rgb(0, 0, 0);   
+}
+
+h1 {
+    padding: 15px;
+    color: #fff;
+}
+
+input {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: #e4ebe6;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+button {
+    padding: 15px 15px;
+    background-color: #868080;
+    border-radius: 5px;
+    border-style: none;
+    margin:5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#calculatreResult {
+    color: #fff;
+}
+
+.addition{
+    background-color: blue; 
+}
+.subtraction{
+    background-color: red;
+}
+.multiplication{
+    background-color: orange;
+}
+.divide{
+    background-color: green;
+}
