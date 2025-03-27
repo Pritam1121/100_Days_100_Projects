@@ -4,49 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Die Face Project</title>
-    <style>
-        *{
-            padding: 0px;
-            margin: 0px;
-            box-sizing: border-box;
-        }
-        body{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-            background-color: #000;
-        }
-        /* .container{
-            background-color: #ffffff00;
-            padding: 40px 50px;
-            height: 50vh;
-        } */
-        .dieSquare{
-            font-size: 8rem;
-            border: none;
-            color: rgb(143, 13, 13);
-        }
-        p{
-            font-size: 1.5rem;
-        }
-        button{
-            padding: 15px 20px;
-            margin: 5px 0px;
-            background-color: greenyellow;
-            border-style: none;
-            border-radius: 7px;
-        }
-
-        #maindiv{
-            background-color: #ffffff;
-            border-radius: 7px;
-            padding: 20px 40px;
-            box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -56,28 +14,9 @@
         <button id="changedie">Change Die</button>
         <p id="dieResult">The die number is the 1</p>
     </div>
-    <script>
-
-        const dieImage = document.getElementById('dieImage');
-        const changedie = document.getElementById('changedie');
-        const dieResult = document.getElementById('dieResult');
-
-        changedie.addEventListener('click',changedierandom)
-
-        function changedierandom(){
-            const dieall = ['\u2680','\u2681','\u2682','\u2683','\u2684','\u2685',]
-
-            const randomNumber = Math.floor(Math.random() * 6) + 1;
-
-            dieImage.innerText = dieall[randomNumber - 1]
-
-            dieResult.innerText = `The die number is the ${randomNumber}`
-
-        }
-    </script>
+   <script src="script.js"></script>
 </body>
 </html>
-
 
 <!-- using the utf converter -->
 <!-- https://www.compart.com/en/unicode/U+2680 -->
